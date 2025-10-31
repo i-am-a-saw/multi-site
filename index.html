@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Site App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Multi-Site</h1>
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link active" data-page="home">Главная</a></li>
+        <li><a href="/movies" class="nav-link" data-page="movies">Фильмы</a></li>
+        <li><a href="/currency" class="nav-link" data-page="currency">Валюты</a></li>
+        <li><a href="/weather" class="nav-link" data-page="weather">Погода</a></li>
+        <li><a href="/quotes" class="nav-link" data-page="quotes">Цитаты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="app"></main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
