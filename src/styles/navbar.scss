@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.navbar {
+  background: $secondary-bg;
+  border-bottom: 2px solid $primary-red;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(220, 20, 60, 0.3);
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: $primary-red;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px $primary-red;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .nav-link {
+    background: none;
+    border: none;
+    color: $text-secondary;
+    text-decoration: none;
+    font-size: $font-size-lg;
+    transition: $transition-base;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-family: inherit;
+
+    &:hover {
+      color: $primary-red;
+      background: rgba(220, 20, 60, 0.1);
+    }
+
+    &.active {
+      color: $primary-red;
+      background: rgba(220, 20, 60, 0.2);
+      font-weight: bold;
+    }
+  }
+}
